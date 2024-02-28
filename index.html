@@ -165,8 +165,13 @@
                 <a href="https://modrinth.com/mod/modelfix" target="_blank">https://modrinth.com/mod/modelfix</a>
             </li>
         </ul>
-        <img src="src/icon.png" alt="ico" class="optimg">
-        <span style="display: block; color: azure;font-size: 18px; text-align: center; padding: 10px 40px 40px 40px; width: 900px;">
+        <a href="https://modrinth.com/modpack/optifab"
+            style="text-decoration: none; display: block; position: relative;">
+            <img src="src/icon.png" alt="ico" class="optimg">
+            <span id="download" class="download">Click To Download!</span>
+        </a>
+        <span
+            style="display: block; color: azure;font-size: 18px; text-align: center; padding: 10px 40px 40px 40px; width: 900px;">
             <span style="color: red;" id="tip1">
                 Attention:
             </span>
@@ -181,19 +186,22 @@
     const tit = document.getElementById('tit');
     const btn = document.getElementById('btn');
     const tip1 = document.getElementById('tip1');
-    const tip2 = document.getElementById('tip2')
+    const tip2 = document.getElementById('tip2');
+    const download = document.getElementById('download');
     let T = false;
     function toggle() {
         if (!T) {
             tit.innerText = 'OptiFab模组列表';
             tip1.innerText = '注意:'
             tip2.innerText = '一些模组需要前置模组，这里未列出，你可以在模组信息界面看到它。'
+            download.innerText = '点击下载!'
             btn.innerText = 'Toggle';
         }
         else {
             tit.innerText = 'OptiFab ModList';
             tip1.innerText = 'Attention:'
             tip2.innerText = 'Some mods requireprerequisite mods, which are not listed here. You can find them in the mod information interface.'
+            download.innerText = 'Click To Download!'
             btn.innerText = '切换';
         }
         T = !T;
