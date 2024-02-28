@@ -1,0 +1,89 @@
+body {
+    user-select: none;
+}
+
+.box {
+    margin: 10px auto 0;
+    display: table;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-sizing: content-box;
+}
+
+.title {
+    font-size: 24px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contul {
+    padding: 0 50px 10px 50px;
+}
+
+.contul li {
+    font-size: 18px;
+    list-style-type: none;
+    color: white;
+    margin: 3px 0 0 0;
+}
+
+.contul li a {
+    text-decoration: none;
+    color: rgb(1, 243, 243);
+}
+
+.contul li a:hover {
+    color: rgb(219, 250, 163) !important;
+}
+
+.contul li a:visited {
+    color: rgb(200, 42, 240);
+}
+
+.contul li img {
+    width: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.tips {
+    display: none;
+}
+
+.contul li:hover span {
+    display: inline;
+}
+
+.lang {
+    padding: 3px 3px 3px 3px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    border: solid 1px;
+    border-color: antiquewhite;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.lang:hover {
+    color: chartreuse;
+    border-color: chartreuse;
+}
+
+.optimg {
+    display: block;
+    width: 100px;
+    margin: 0 auto 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.optimg:hover{
+    transform: rotate(135deg);
+}
