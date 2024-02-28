@@ -83,7 +83,32 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.5s;
+    position: relative;
 }
-.optimg:hover{
+
+.optimg:hover {
     transform: rotate(135deg);
+}
+
+.download {
+    display: inline;
+    font-size: 16px;
+    color:red;
+    padding: 5px;
+    z-index: 1;
+    border: solid 1px azure;
+    background-color: rgb(240, 255, 255);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.optimg:hover + .download {
+    display: block;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
